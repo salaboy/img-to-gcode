@@ -68,6 +68,17 @@ void setup() {
   gcodePath = sketchPath + "/gcode";
   generatedImgs = sketchPath + "/generatedImages";
   resultImgs = sketchPath + "/resultImages";
+  
+  
+  File dataDir = new File( dataPath);
+  if (!dataDir.exists()) {
+    try {
+      dataDir.mkdir();
+    } 
+    catch(SecurityException se) {
+      //handle it
+    }
+  }
 
   File gcodeDir = new File(gcodePath);
   if (!gcodeDir.exists()) {
