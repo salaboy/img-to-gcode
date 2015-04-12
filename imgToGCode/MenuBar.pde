@@ -52,27 +52,27 @@ public class MenuBar {
     }
     
      cp5.addButton("cuatricromia")
-      .setPosition(xPosition, yPosition + 90)
+      .setPosition(xPosition + 130, yPosition)
         .setSize(60, 30)
           .setValue(0)
             .activateBy(ControlP5.RELEASE);
 
     cp5.addButton("crosshatch")
-      .setPosition(xPosition, yPosition + 120)
+      .setPosition(xPosition + 130, yPosition + 30)
         .setSize(60, 30)
           .setValue(0)
             .activateBy(ControlP5.RELEASE);
 
 
     cp5.addButton("contour")
-      .setPosition(xPosition , yPosition + 150)
+      .setPosition(xPosition + 130 , yPosition + 60)
         .setSize(60, 30)
           .setValue(0)
             .activateBy(ControlP5.RELEASE);
 
 
     cp5.addButton("clear")
-      .setPosition(xPosition, yPosition + 180)
+      .setPosition(xPosition + 130, yPosition + 90)
         .setSize(60, 30)
           .setValue(0)
             .activateBy(ControlP5.RELEASE);
@@ -80,7 +80,7 @@ public class MenuBar {
 
 
     cp5.addButton( "savejpg" )
-      .setPosition(xPosition, yPosition + 210)
+      .setPosition(xPosition + 130, yPosition + 120)
         .setSize( 60, 30 )
           .setValue(0)
             .activateBy(ControlP5.RELEASE);

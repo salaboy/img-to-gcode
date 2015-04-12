@@ -71,13 +71,13 @@ class Cuatricromia {
   public void showPreview(int x, int y) {
     rect(x, y, 300, 300);
     tint(255, 255, 0, 128);
-    image(yimg, x, y, (yimg.width/7), (yimg.height/7));
+    image(yimg, x, y, (yimg.width/8), (yimg.height/8));
     tint(255, 0, 255, 128); 
-    image(mimg, x + 150, y, (mimg.width/7), (mimg.height/7));
+    image(mimg, x, y+90, (mimg.width/8), (mimg.height/8));
     tint(0, 255, 255, 128);
-    image(cimg, x, y+150, (cimg.width/7), (cimg.height/7));
+    image(cimg, x, y+180, (cimg.width/8), (cimg.height/8));
     noTint();
-    image(kimg, x+150, y+150, (kimg.width/7), (kimg.height/7));
+    image(kimg, x, y+270, (kimg.width/8), (kimg.height/8));
   }
 }
 

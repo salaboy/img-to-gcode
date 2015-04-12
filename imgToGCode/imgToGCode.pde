@@ -55,7 +55,7 @@ void setup() {
 
   menuBar = new MenuBar(this, dataPath);
   menuBar.setXPosition(1000);
-  menuBar.setYPosition(100);
+  menuBar.setYPosition(20);
   menuBar.init();
 }
 
@@ -70,7 +70,7 @@ void draw() {
     selectedImageFileName = menuBar.getSelectedFileName(menuBar.getSelectedFileIndex());
     imgPreview = new ImagePreview(selectedImageFileName);
     imgPreview.setXPosition(1000);
-    imgPreview.setYPosition(400);
+    imgPreview.setYPosition(200);
     imgPreview.showPreview();
 
   }
@@ -80,7 +80,7 @@ void cuatricromia(int value){
   Cuatricromia c = new Cuatricromia(imgPreview.getOriginalImage().get());
   c.calculate();
   c.saveImages(generatedImgs);
-  c.showPreview(1000,550);
+  c.showPreview(1000,300);
 }
 
 void contour(int value){
